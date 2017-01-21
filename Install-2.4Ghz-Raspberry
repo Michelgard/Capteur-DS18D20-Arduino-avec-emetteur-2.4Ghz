@@ -39,3 +39,7 @@ Installer nRF24L01+ sur le Raspberry PI
     7		21 MISO			
 
 Lancer sur le raspberry Pi : sudo python lecture-capteurRF24.py
+
+Pour un lancement au démarrage du Raspberry Pi :
+	ouvrir sudo nano /etc/rc.local
+	ajouter "python lecture-capteurRF24.py &" (sans les "") avant le exit 0 à la fin du fichier
